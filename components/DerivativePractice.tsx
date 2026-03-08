@@ -19,7 +19,7 @@ export default function DerivativePractice() {
     function generateRandomProblem() {
         console.log(parse("3x^2 + 4x + 2").toTex({parentheses: "auto", implicit: "hide"}));
 
-        return parse("3x^2 + 4x + 2").toTex();
+        return parse("3x^2 + 4x + 2").toTex().replaceAll(/~ ?/g, "");
         // TODO: Randomly pick a number between 1 and 5 coefficients
         // TODO: Generate random integers between -10 and 10 for these
     }
