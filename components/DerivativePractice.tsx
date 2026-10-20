@@ -74,7 +74,7 @@ export default function DerivativePractice() {
                     </p>
 
                     <div className="text-3xl">
-                        <MathJax inline>
+                        <MathJax inline dynamic>
                             {`\\(${problem.expression}\\)`}
                         </MathJax>
                     </div>
@@ -131,7 +131,7 @@ export default function DerivativePractice() {
                     <div className="rounded-box bg-base-200 p-4 text-center">
                         <p className="mb-2 font-medium">Derivative</p>
                         <div className="text-xl">
-                            <MathJax inline>
+                            <MathJax inline dynamic>
                                 {`\\(${problem.answerTex}\\)`}
                             </MathJax>
                         </div>
